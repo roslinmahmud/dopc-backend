@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68744931-0a6e-4550-8a35-22487d93a719" name="Changes" comment="Add README.md and requirements.txt">
+    <list default="true" id="68744931-0a6e-4550-8a35-22487d93a719" name="Changes" comment="updated README.md">
+      <change afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_endpoints.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_main.http" beforeDir="false" afterPath="$PROJECT_DIR$/test_main.http" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,8 +53,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "FastAPI.Wolt-Backend.executor": "Debug",
+    "FastAPI.Wolt-Backend.executor": "Run",
     "HTTP Request.generated-requests | #1.executor": "Run",
+    "HTTP Request.test_main | #2.executor": "Run",
+    "Python tests.Python tests for test_endpoints.test_delivery_order_price.executor": "Run",
+    "Python tests.Python tests for test_endpoints.test_delivery_order_price_return_400.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
@@ -64,7 +70,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="FastAPI.Wolt-Backend">
+  <component name="RunManager" selected="Python tests.Python tests for test_endpoints.test_delivery_order_price_bad_request">
     <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" executionIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -83,8 +89,59 @@
       <option name="launchJavascriptDebuger" value="false" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for test_endpoints.test_delivery_order_price" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Wolt-Backend" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_endpoints.test_delivery_order_price&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_endpoints.test_delivery_order_price_bad_request" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Wolt-Backend" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_endpoints.test_delivery_order_price_bad_request&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_endpoints.test_delivery_order_price_return_400" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Wolt-Backend" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_endpoints.test_delivery_order_price_return_400&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_endpoints.test_delivery_order_price_bad_request" />
+        <item itemvalue="Python tests.Python tests for test_endpoints.test_delivery_order_price" />
+        <item itemvalue="Python tests.Python tests for test_endpoints.test_delivery_order_price_return_400" />
         <item itemvalue="HTTP Request.generated-requests | #1" />
       </list>
     </recent_temporary>
@@ -107,7 +164,7 @@
       <updated>1737273245411</updated>
       <workItem from="1737273246411" duration="3201000" />
       <workItem from="1737495711511" duration="7000" />
-      <workItem from="1737495726129" duration="4279000" />
+      <workItem from="1737495726129" duration="5385000" />
     </task>
     <task id="LOCAL-00001" summary="Completed delivery_order_calculation and API">
       <option name="closed" value="true" />
@@ -125,7 +182,23 @@
       <option name="project" value="LOCAL" />
       <updated>1737499376775</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="updated README.md">
+      <option name="closed" value="true" />
+      <created>1737502170516</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1737502170516</updated>
+    </task>
+    <task id="LOCAL-00004" summary="updated README.md">
+      <option name="closed" value="true" />
+      <created>1737502175796</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1737502175796</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,7 +218,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Completed delivery_order_calculation and API" />
     <MESSAGE value="Add README.md and requirements.txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add README.md and requirements.txt" />
+    <MESSAGE value="updated README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated README.md" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -155,10 +229,16 @@
           <line>30</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/services/delivery_order_service.py</url>
+          <line>23</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Wolt_Backend$Wolt_Backend.coverage" NAME="Wolt-Backend Coverage Results" MODIFIED="1737498113488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Wolt_Backend$Wolt_Backend.coverage" NAME="Wolt-Backend Coverage Results" MODIFIED="1737502341502" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Wolt_Backend$.coverage" NAME=" Coverage Results" MODIFIED="1737503101584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
   </component>
 </project>
