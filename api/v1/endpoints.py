@@ -1,5 +1,6 @@
 from fastapi import APIRouter, Query, HTTPException
 from models.schemas import PriceResponse
+from services.delivery_order_service import calculate_delivery_order_price
 
 router = APIRouter()
 
@@ -11,12 +12,9 @@ async def delivery_order_price(
         user_lat: float = Query(...),
         user_lon: float = Query(...)
 ):
-    return {
-        "total_price": 1190,
-        "small_order_surcharge": 0,
-        "cart_value": 1000,
-        "delivery": {
-            "fee": 190,
-            "distance": 177
-        }
-    }
+    return await calculate_delivery_order_price(
+        venue_slug=venue_slug,
+        cart_value=cart_value,
+        user_lat=user_lat,
+        user_lon=user_lon
+    )
