@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68744931-0a6e-4550-8a35-22487d93a719" name="Changes" comment="Completed delivery_order_calculation and API">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="68744931-0a6e-4550-8a35-22487d93a719" name="Changes" comment="Add README.md and requirements.txt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -108,7 +107,7 @@
       <updated>1737273245411</updated>
       <workItem from="1737273246411" duration="3201000" />
       <workItem from="1737495711511" duration="7000" />
-      <workItem from="1737495726129" duration="3325000" />
+      <workItem from="1737495726129" duration="4279000" />
     </task>
     <task id="LOCAL-00001" summary="Completed delivery_order_calculation and API">
       <option name="closed" value="true" />
@@ -118,7 +117,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737498211704</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add README.md and requirements.txt">
+      <option name="closed" value="true" />
+      <created>1737499376774</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1737499376775</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,7 +144,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Completed delivery_order_calculation and API" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed delivery_order_calculation and API" />
+    <MESSAGE value="Add README.md and requirements.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add README.md and requirements.txt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
