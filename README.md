@@ -30,7 +30,7 @@ This project implements a backend service for the **Delivery Order Price Calcula
 
 4. Run the FastAPI application:
    ```bash
-   uvicorn app.main:app --reload
+   uvicorn main:app --reload
    ```
 
 5. Access the API documentation:
