@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68744931-0a6e-4550-8a35-22487d93a719" name="Changes" comment="updated endpoints">
-      <change afterPath="$PROJECT_DIR$/tests/test_delivery_order.py" afterDir="false" />
+    <list default="true" id="68744931-0a6e-4550-8a35-22487d93a719" name="Changes" comment="Add unit test for calculate_delivery_order_price">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/delivery_order_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/delivery_order_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_endpoints.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_endpoints.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +60,7 @@
     "Python tests.Python tests for test_delivery_order.test_calculate_delivery_order_price_delivery_not_possible.executor": "Run",
     "Python tests.Python tests for test_delivery_order.test_calculate_delivery_order_price_simple.executor": "Run",
     "Python tests.Python tests for test_delivery_order.test_calculate_delivery_order_price_success.executor": "Run",
+    "Python tests.Python tests for test_delivery_order.test_calculate_delivery_order_price_with_error_handling.executor": "Run",
     "Python tests.Python tests for test_endpoints.test_delivery_order_price.executor": "Run",
     "Python tests.Python tests for test_endpoints.test_delivery_order_price_bad_request.executor": "Debug",
     "Python tests.Python tests for test_endpoints.test_delivery_order_price_return_400.executor": "Debug",
@@ -76,11 +73,11 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Python tests.Python tests for test_delivery_order.test_calculate_delivery_order_price_delivery_not_possible">
+  <component name="RunManager" selected="Python tests.Python tests for test_delivery_order.test_calculate_delivery_order_price_success">
     <configuration name="Wolt-Backend" type="Python.FastAPI">
       <option name="file" value="$PROJECT_DIR$/main.py" />
       <module name="Wolt-Backend" />
@@ -144,7 +141,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_endpoints.test_delivery_order_price" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_delivery_order.test_calculate_delivery_order_price_with_error_handling" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Wolt-Backend" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -156,7 +153,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_endpoints.test_delivery_order_price&quot;" />
+      <option name="_new_target" value="&quot;test_delivery_order.test_calculate_delivery_order_price_with_error_handling&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -178,11 +175,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_delivery_order.test_calculate_delivery_order_price_delivery_not_possible" />
         <item itemvalue="Python tests.Python tests for test_delivery_order.test_calculate_delivery_order_price_success" />
+        <item itemvalue="Python tests.Python tests for test_delivery_order.test_calculate_delivery_order_price_delivery_not_possible" />
+        <item itemvalue="Python tests.Python tests for test_delivery_order.test_calculate_delivery_order_price_with_error_handling" />
         <item itemvalue="Python tests.Python tests for test_delivery_order.test_calculate_delivery_order_price_simple" />
         <item itemvalue="Python tests.Python tests for test_endpoints.test_delivery_order_price_bad_request" />
-        <item itemvalue="Python tests.Python tests for test_endpoints.test_delivery_order_price" />
       </list>
     </recent_temporary>
   </component>
@@ -206,7 +203,7 @@
       <workItem from="1737495711511" duration="7000" />
       <workItem from="1737495726129" duration="6005000" />
       <workItem from="1737503831575" duration="2933000" />
-      <workItem from="1737533903969" duration="1222000" />
+      <workItem from="1737533903969" duration="1620000" />
     </task>
     <task id="LOCAL-00001" summary="Completed delivery_order_calculation and API">
       <option name="closed" value="true" />
@@ -256,7 +253,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737503601659</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add unit test for calculate_delivery_order_price">
+      <option name="closed" value="true" />
+      <created>1737535392297</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1737535392297</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,7 +284,8 @@
     <MESSAGE value="updated README.md" />
     <MESSAGE value="Add tests for the solution and test_endpoints" />
     <MESSAGE value="updated endpoints" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated endpoints" />
+    <MESSAGE value="Add unit test for calculate_delivery_order_price" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add unit test for calculate_delivery_order_price" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -294,6 +300,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Wolt_Backend$Wolt_Backend.coverage" NAME="Wolt-Backend Coverage Results" MODIFIED="1737532346958" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/Wolt_Backend$.coverage" NAME=" Coverage Results" MODIFIED="1737535005336" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/Wolt_Backend$.coverage" NAME=" Coverage Results" MODIFIED="1737535360200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
   </component>
 </project>
