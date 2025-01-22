@@ -7,6 +7,19 @@ from models.schemas import PriceResponse, Delivery
 
 async def calculate_delivery_order_price(venue_slug: str, cart_value: int, user_lat: float,
                                          user_lon: float) -> PriceResponse:
+    # Input validation
+    if not venue_slug or not isinstance(venue_slug, str):
+        raise HTTPException(status_code=400, detail="Invalid venue_slug, a non-empty string required.")
+
+    if not isinstance(cart_value, int) or cart_value < 0:
+        raise HTTPException(status_code=400, detail="Invalid cart_value, a non-negative integer required.")
+
+    if not isinstance(user_lat, float) or not (-90 <= user_lat <= 90):
+        raise HTTPException(status_code=400, detail="Invalid user_lat. Valid range between -90 and 90.")
+
+    if not isinstance(user_lon, float) or not (-180 <= user_lon <= 180):
+        raise HTTPException(status_code=400, detail="Invalid user_lon. Valid range between -180 and 180.")
+
     client = HomeAssignmentClient()
 
     static_data = await client.get_static_data(venue_slug)

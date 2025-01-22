@@ -22,8 +22,8 @@ def test_delivery_order_price_bad_request():
     params = {
         "venue_slug": "home-assignment-venue-helsinki",
         "cart_value": 1000,
-        "user_lat": 600.17094,
-        "user_lon": 240.93087
+        "user_lat": 80.17094,
+        "user_lon": 89.93087
     }
 
     # Sending POST request to the endpoint
