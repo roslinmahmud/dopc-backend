@@ -12,7 +12,7 @@ This project implements a backend service for the **Delivery Order Price Calcula
 - `pip` (Python package manager)
 
 ### Steps
-1. Unzip the Wolt-Backend.zip folder:
+1. Unzip the wolt-backend.zip folder:
    ```bash
    cd Wolt-Backend
    ```
