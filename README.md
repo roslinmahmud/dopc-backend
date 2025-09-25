@@ -12,23 +12,20 @@ This project implements a backend service for the **Delivery Order Price Calcula
 - `pip` (Python package manager)
 
 ### Steps
-1. Unzip the wolt-backend.zip folder:
-   ```bash
-   cd Wolt-Backend
    ```
 
-2. Create a virtual environment:
+1. Create a virtual environment:
    ```bash
    python3 -m venv env
    source env/bin/activate
    ```
 
-3. Install dependencies:
+2. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
 
-4. Run the FastAPI application:
+2. Run the FastAPI application:
    ```bash
    uvicorn main:app --reload
    ```
